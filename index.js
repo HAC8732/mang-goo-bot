@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const token = process.env.token;
 const welcomeChannelName = "환영한다-동무들";
 const byeChannelName = "동무 반갑소";
-const welcomeChannelComment = "잘가시고";
+const welcomeChannelComment = "동무 반갑소";
 const byeChannelComment = "잘가시고";
 
 client.on('ready', () => {
