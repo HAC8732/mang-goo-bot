@@ -51,7 +51,13 @@ client.on('message', (message) => {
 
   if(message.content == '맹구봇 옷벗어') {
     return message.reply('네, 주인님');
-  }  
+  }
+
+  if(message.author.bot) return;
+
+  if(message.content == '장현준') {
+    return message.reply('나 장현준 아니라고 븅신아');
+  }     
 
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
