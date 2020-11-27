@@ -35,6 +35,18 @@ client.on('message', (message) => {
     return message.reply('씨발롬아');
   }
 
+  if(message.author.bot) return;
+
+  if(message.content == '맹구봇') {
+    return message.reply('뭐요 ^^ㅣ발아');
+  }
+
+  if(message.author.bot) return;
+
+  if(message.content == '맹구봇 노래틀어') {
+    return message.reply('병신아 코드를 짜세요');
+  }
+
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
     let embed = new Discord.RichEmbed()
